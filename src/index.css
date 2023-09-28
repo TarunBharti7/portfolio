@@ -47,7 +47,7 @@ ul a li:hover {
     height: 90vh;
     display: flex;
     justify-content: space-around;
-    padding-top: 130px;
+    padding-top: 230px;
     margin-bottom: 150px;
 }
 
@@ -94,8 +94,10 @@ ul a li:hover {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    column-gap: 85px;
     height: 90vh;
     flex-wrap: wrap;
+    padding: 0px 60px;
 }
 
 .card-img{
