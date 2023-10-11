@@ -1,10 +1,13 @@
 import React from 'react'
+import Navbar from './component/Navbar';
+import './component/navbar.css'
 
 const App = () => {
   return (
     <>
       {/* navbar */}
-      <nav>
+      <Navbar/>
+      {/* <nav>
         <h1>Tarun</h1>
         <ul>
           <a href="#home"><li>Home</li></a>
@@ -12,7 +15,7 @@ const App = () => {
           <a href=""><li>Tools</li></a>
           <a href=""><li>About me</li></a>
         </ul>
-      </nav>
+      </nav> */}
 
       {/* home */}
       <section id='home'>
@@ -34,7 +37,7 @@ const App = () => {
       {/* Project */}
       <section id='project'>
         <div className="project">
-          <h1 className='heading'>Project</h1>
+          <h1 className='heading'>Projects</h1>
           <div className="p-container">
           {/* 1 */}
             <div className="card-img">
