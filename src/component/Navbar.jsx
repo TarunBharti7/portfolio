@@ -27,7 +27,7 @@ const Navbar = () => {
                 <li><a className="navbar-link" onClick={removeSlide} href="#home">Home</a></li>
                 <li><a className="navbar-link" onClick={removeSlide} href="#skill">Skills</a></li>
                 <li><a className="navbar-link" onClick={removeSlide} href="#">About me</a></li>
-                <li><a className="navbar-link" onClick={removeSlide} href="#">Contact uus</a></li>
+                <li><a className="navbar-link" onClick={removeSlide} href="#">Contact us</a></li>
             </ul>
         </nav>
 
