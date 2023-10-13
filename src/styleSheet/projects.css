@@ -48,3 +48,14 @@
     background-color: navy;
     cursor: pointer;
 }
+
+
+@media(max-width: 500px){
+    .p-container{
+        gap: 40px;
+    }
+
+    .heading {
+        font-size: xx-large;
+    }
+}
