@@ -24,10 +24,10 @@ const Navbar = () => {
 
         <nav className="navbar ">
             <ul className="navbar-list">
-                <li><a className="navbar-link" onClick={removeSlide} href="#home">Home</a></li>
+                <li><a className="navbar-link" onClick={removeSlide} href="#home">About</a></li>
                 <li><a className="navbar-link" onClick={removeSlide} href="#skill">Skills</a></li>
-                <li><a className="navbar-link" onClick={removeSlide} href="#">About me</a></li>
-                <li><a className="navbar-link" onClick={removeSlide} href="#">Contact us</a></li>
+                <li><a className="navbar-link" onClick={removeSlide} href="#project">Projects</a></li>
+                <li><a className="navbar-link" onClick={removeSlide} href="#">Contact</a></li>
             </ul>
         </nav>
 

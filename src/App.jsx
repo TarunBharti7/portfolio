@@ -5,6 +5,7 @@ import './styleSheet/navbar.css';
 import './styleSheet/home.css'
 import Projects from './component/Projects';
 import './styleSheet/projects.css'
+import Skill from './component/Skill';
 
 const App = () => {
   return (
@@ -12,8 +13,7 @@ const App = () => {
       <Navbar/>
       <Home/>
       <Projects/>
-
-
+      <Skill/>
     </>
   )
 }
