@@ -18,7 +18,7 @@ body {
     padding: 0 4.8rem;
     height: 8rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background: black;
     color: white;
@@ -28,10 +28,6 @@ body {
     left: 0%;
     z-index: 1;
     /* margin-bottom: 8vh; */
-}
-
-.header .logo {
-    font-size: 4rem;
 }
 
 .header .navbar-list {
@@ -44,10 +40,25 @@ body {
     font-weight: bolder;
 }
 
+.btn a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.btn a:hover {
+    color: cyan;
+    border-color: #00ffff;
+}
+
 .navbar-link:link , 
 .navbar-link:visited{
     display: inline-block;
-    text-transform: uppercase ;
+    /* text-transform: uppercase ; */
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 900;
@@ -63,8 +74,8 @@ body {
 
 
 .mobile-nav-icon {
-    width: 5rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     color: #fff;
 }
 
@@ -92,7 +103,8 @@ body {
 
     .header {
         /* width: 40%; */
-        position: relative;
+        position: fixed;
+        justify-content: space-between;
     }
 
     .navbar {
@@ -116,6 +128,15 @@ body {
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
+    }
+
+    .btn a {
+        font-size: 10px;
+        padding: 7px 10px;
+    }
+
+    .btn {
+        margin-left: -20px;
     }
 
     .navbar-list{
