@@ -11,7 +11,7 @@ const Leetcode = () => {
       </p>
       <a href="https://leetcode.com/u/Tarun_Bharti/" target="_blank">
         <img
-          className="w-[300px] rounded-lg lg:w-[800px]"
+          className="w-[300px] rounded-lg lg:w-[800px] "
           src="/leetcode.png"
           alt=""
         />

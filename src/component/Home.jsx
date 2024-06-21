@@ -47,7 +47,7 @@ const Home = () => {
 
       <div>
         <img
-          className="w-[300px] lg:w-[400px] rounded-full border-2 border-black"
+          className="w-[300px] lg:w-[400px] rounded-full border-2 border-black "
           src="/profile_photo1.jpeg"
           alt=""
         />

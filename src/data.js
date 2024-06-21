@@ -107,54 +107,51 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "Beach Resort",
+    title: "Moivex",
     date: "Sep 2023 - Oct 2023",
     description:
       "Designed and developed a frontend web application that allows users to view the list of rooms in a beach resort, where user to view the rooms according to their room type, no of guests and according to their price range, etc",
 
     image:
-      "project1",
-    tags: ["React Js", "useContext"],
+      "/moivex.png",
+    tags: ["React Js", "Redux"],
     category: "web app",
-    github: "https://github.com/AshishKumar8271/Beach-Resort",
-    webapp: "https://ashishkumar8271.github.io/Beach-Resort/",
+    github: "https://github.com/TarunBharti7/Movie-app-React",
+    webapp: "https://movie-app-react-wine.vercel.app/",
   },
   {
     id: 1,
-    title: "Keep Clone",
+    title: "Todo App",
     date: "July 2023 - Aug 2023",
     description:
       "Developed the GKeep, a project to manage your all notes and save them in localStorage. It help the users to save their importand notes. This application is developed by the pure javascript and CSS and HTML.",
     image:
-      "project2",
+      "/todo.png",
     tags: [
-      "Vanilla Js",
+      "React Js",
       "LocalStorage",
-      "Html",
-      "CSS",
+      "Tailwind",
     ],
     category: "web app",
-    github: "https://github.com/AshishKumar8271/keepClone",
-    webapp: "https://ashishkumar8271.github.io/keepClone/",
+    github: "https://github.com/TarunBharti7/React-Redux-Todo-App",
+    webapp: "https://react-redux-todo-app-tau-five.vercel.app/",
   },
 
   {
     id: 2,
-    title: "Mobile Shoppping Cart",
+    title: "Day Light Showroom",
     date: "Sep 2023 - Oct 2023",
     description:
       "Designed and developed a Mobile Shopping Cart web app that shows the amount of mobiles their total prices. Implemented key features such as remove the item, increase and decrease amount of items and clear the cart.",
     image:
-      "project4",
+      "/ecommerce.png",
     tags: [
-      "Vite",
       "React Js",
-      "TypeScript",
+      "Flowbite",
       "Tailwind CSS",
-      "HTML",
     ],
     category: "web app",
-    github: "https://github.com/AshishKumar8271/Cart",
-    webapp: "https://cart-alpha-beryl.vercel.app/",
+    github: "https://github.com/TarunBharti7/ecommerce",
+    webapp: "https://ecommerce-eight-snowy.vercel.app/",
   },
 ]  

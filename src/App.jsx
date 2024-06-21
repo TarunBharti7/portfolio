@@ -13,8 +13,7 @@ const App = () => {
       <Home/>
       <Leetcode/>
       <Skill/>
-      {/* <Projects/>
-      <Skill/> */}
+      <Projects/>
     </>
   )
 }

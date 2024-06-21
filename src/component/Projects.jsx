@@ -1,76 +1,53 @@
-import React from 'react'
+import React from 'react';
+import { projects } from '../data';
 
 const Projects = () => {
   return (
-    <>
-        <section id='project'>
-        <div className="project">
-          <h1 className='heading'>Projects</h1>
-          <div className="p-container">
-          {/* 1 */}
-            <div className="card-img">
-              <img src="/dice.png" alt="#dice-project" />
-              <a href="https://dice-game-mu-peach.vercel.app/" target='_blank'>
-                <button>Demo</button>
-              </a>
-            </div>
-              {/* 2 */}
-            <div className="card-img">
-              <img src="/todo.png" alt="#dice-project" />
-              <a href="https://tarunbharti7.github.io/To-do-list-with-vanila-javascript/" target='_blank'>
-                <button>Demo</button>
-              </a>
-            </div>
-            {/* 3 */}
-            <div className="card-img">
-              <img src="/landing.png" alt="#dice-project" />
-              <a href="https://tarunbharti7.github.io/Website-landing-page-using-flexbox/" target='_blank'>
-                <button>Demo</button>
-              </a>
-            </div>
-            {/* 4 */}
-            <div className="card-img">
-              <img src="/password.png" alt="#dice-project" />
-              <a href="https://password-generator-khaki-one.vercel.app/" target='_blank'>
-                <button>Demo</button>
-              </a>
-            </div>
-            {/* 5 */}
-            <div className="card-img">
-              <img src="/pokemon.png" alt="#dice-project" />
-              <a href="https://tarunbharti7.github.io/pokemon-api-fetching/" target='_blank'>
-                <button>Demo</button>
-              </a>
+    <div
+      id="skill"
+      className="flex justify-center flex-col items-center gap-10 pb-44 "
+    >
+      <h1 className="text-6xl font-bold">Projects</h1>
+      <p className="text-3xl font-normal text-slate-700 w-[340px] text-center lg:w-[650px] leading-relaxed">
+        I have also worked on some small web projects and currently working on bigger projects. Here are some of my projects:
+      </p>
+
+
+      <div className="flex max-w-[1200px] flex-wrap justify-around gap-16 ">
+        {projects.map((data, index) => (
+          <div key={index} className=" w-[330px] h-[520px] rounded-2xl py-6 px-5 flex flex-col gap-[14px] overflow-hidden border-[0.1px] border-gray-400 shadow-[0_20px_50px_rgba(0,_0,_0,_4)]">
+            <img className='border-[0.1px] border-gray-400 rounded-2xl shadow-[0_0_12px_4px_rgba(0,0,0,0.3)]' src={data.image} alt="project" />
+            <div className='w-full flex items-center flex-wrap gap-2 mt-1'>
+              {data.tags && data.tags.map((item, index) => (
+                <p key={index} className='text-2xl py-1 px-4 rounded-2xl bg-slate-300'>
+                  {item}
+                </p>
+              ))}
             </div>
 
-            {/* 6 */}
-            <div className="card-img">
-              <img src="/game.png" alt="#dice-project" />
-              <a href="https://tarunbharti7.github.io/stone-paper-scissor-Game/" target='_blank'>
-                <button>Demo</button>
+            <div className='w-full flex flex-col px-1'>
+              <h1 className='text-[20px] overflow-hidden w-full font-bold'>{data.title}</h1>
+              <p className='text-[12px] py-3 text-gray-600'>{data.date}</p>
+              <h1 className='text-2xl text-gray-700'>{data.description}</h1>
+            </div>
+            {/* code live link */}
+            <div className='flex justify-around'>
+              <a href={data.github} target='_blank'>
+                <button className='border-[1px] border-black px-6 py-3 rounded-xl bg-black text-white hover:bg-white hover:text-black'>
+                  View Code
+                </button>
+              </a>
+              <a href={data.webapp} target='_blank'>
+                <button className='border-[1px] border-black px-6 py-3 rounded-xl bg-black text-white hover:bg-white hover:text-black'>
+                  View Live App
+                </button>
               </a>
             </div>
-
-            {/* 7 */}
-            <div className="card-img">
-              <img src="/video.png" alt="#dice-project" />
-              <a href="https://tarunbharti7.github.io/videos-play-and-pause/" target='_blank'>
-                <button>Demo</button>
-              </a>
-            </div>
-
-            {/* 8 */}
-            <div className="card-img">
-              <img src="/lodge.png" alt="#dice-project" />
-              <a href="https://tarunbharti7.github.io/LodgeM5-website/" target='_blank'>
-                <button>Demo</button>
-              </a>
-            </div>
-            
           </div>
-        </div>
-      </section>
-    </>
+        ))}
+      </div>
+
+    </div>
   )
 }
 
